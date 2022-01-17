@@ -1,0 +1,116 @@
+whoami : it will give you your username 
+man : man whoami -   it will give details about the command whoami 
+
+clear : it will clear all the commands / text from the screen , you wont be able to see anything what you have done before / type before
+
+clear -x : it will clear the current page only or make a fresh page to write further commands , in this case if you scroll then you will be able to see what you have done before 
+
+pwd : print working directory: it will let you know what is the current working directory in which you are working. 
+
+ls  : list the contents / files in the current working directory 
+
+ls foldername  : it will give you content details in any particular folder
+
+ls folder1/folder2 >>> here it will go in folder1 and then it will show contents of folder2 
+
+ls -a : it will show all files including which are starting with "." 
+
+ls -l : it will give details of files( long format) in the current directory about size etc. 
+
+cd : we can change directory with this. 
+
+cd Desktop/ : it will change the directory to Desktop. 
+now if you write ls then it will show you the list of contents on desktop 
+
+cd foldername1/foldername2/foldername3 : it will take you inside the foldername3 
+
+cd .. : it will take you one step back or in previous folder , in the above case it will take you to foldername2
+
+cd ../ ../ : this command will take you to two folders back. 
+
+cd / : it will take you to the root directory 
+
+cd ~ : it will take you to home directory 
+
+mkdir : it will create folder 
+mkdir Bitcoin : it will create a folder name Bitcoin in the current working directory 
+
+touch : it will create file in the working directory 
+
+touch btcprice.txt : it will create empty files by the name of btcprice.txt 
+
+rmdir : it will remove directory / folder ( only empty directories)
+
+rm : it will remove file
+
+touch bitcoin ether xrp : it will create three files by the name of bitcoin, ether and xrp 
+
+rm bitcoin  : this will remove file by the name of bitcoin 
+
+-v : it will tell us whether the file(s) has been deleted or not 
+
+rm -v bitcoin : it will give message : removed 'bitcoin'
+
+
+rm -r directoryname : it will remove entire directory with files. 
+
+
+rm -ri Bitcoin/ : it will give interactive inputs from user whether to delete any particular file in folder Bitcoin or not . 
+
+xdg-open : it will open particular file in the current working directory 
+
+mv oldfilename newfilename : it will rename the old file name to new one 
+
+mv bitcoin.txt btcprice.txt : it will convert bitcoin.txt file name to btcprice.txt file name 
+
+mv btcprice.txt Bitcoin/ : If you are on Desktop and there is folder named Bitcoin, then this command will move btcprice.txt from desktop to Bitcoin folder which is on Desktop 
+
+cp bitcoin.txt Bitcoin.txt : this will make a copy of bitcoin.txt to Bitcoin.txt 
+
+cp -r folder1 folder2 : it will make a copy folder1  and create another folder2 contains the same content as in folder1
+
+head filename : it will show first few lines of the file 
+
+head filename -n 100 : it will show first 100 lines of the file 
+
+tail filename : it will show the last few lines of the file 
+
+tail filename -n 30 : it will show the last 30 lines of the file 
+
+date : it will print current date and time 
+
+cat  filename: it will show us content of the entire file 
+
+wc filenmae : it will show us the details of the filename : number of words, number of lines and number of bytes
+
+wc filename -l : if we want number of lines in a file 
+wc filename -m : number of characters in file 
+wc filename -c : number of bytes of file 
+
+piping : ls -l | wc : it will search the list of items in directory and then pass the command with the help of pipe | and then it will take wc command
+
+sort filename : it will sort the content in the file 
+
+cat file1 file2 | sort : this will concatinate two files and with the help of pipe it will sort content of files 
+
+uniq: this will give us unique content in the files or text 
+
+ls | uniq : it will list unique files name 
+
+sort file | uniq  : it will sort content and remove repetive text of numbers 
+
+echo : it will print the text or content , with the help of pipe operator , we can print or insert the text in the file as well. 
+
+echo "current btc price is $50k" >> bitcoin.txt : it will print or insert the the given text in the bitcoin.txt file 
+
+echo * : it will show everything in a folder like file name , subfolder name etc. 
+
+echo *.txt : it will show us file names starting with any name but ends with .txt 
+
+
+
+
+
+
+
+
